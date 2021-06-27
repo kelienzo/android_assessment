@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="303dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#0508B5"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="@+id/btnRepair" />
+
+    <TextView
+        android:id="@+id/txtServices"
+        android:layout_width="208dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Services"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtChooseService"
+        android:layout_width="301dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="44dp"
+        android:text="Choose any Service\nYou need!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtServices"
+        app:layout_constraintStart_toStartOf="@+id/txtServices"
+        app:layout_constraintTop_toBottomOf="@+id/txtServices" />
+
+    <Button
+        android:id="@+id/btnCarFront"
+        android:layout_width="134dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/white"
+        android:drawableTop="@drawable/ic_car_front"
+        android:text="Car Rental"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/txtChooseService"
+        app:layout_constraintTop_toBottomOf="@+id/txtChooseService" />
+
+    <Button
+        android:id="@+id/btnCarSide"
+        android:layout_width="134dp"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:drawableTop="@drawable/ic_car_side"
+        android:text="Buy &amp; sell"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCarFront"
+        app:layout_constraintEnd_toEndOf="@+id/txtChooseService"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toEndOf="@+id/btnCarFront"
+        app:layout_constraintTop_toTopOf="@+id/btnCarFront"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnRepair"
+        android:layout_width="134dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/white"
+        android:drawableTop="@drawable/ic_repairs"
+        android:text="Repair"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnCarFront"
+        app:layout_constraintStart_toStartOf="@+id/btnCarFront"
+        app:layout_constraintTop_toBottomOf="@+id/btnCarFront" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="134dp"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:drawableTop="@drawable/ic_wheel"
+        android:text="Acessories"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRepair"
+        app:layout_constraintEnd_toEndOf="@+id/btnCarSide"
+        app:layout_constraintStart_toStartOf="@+id/btnCarSide"
+        app:layout_constraintTop_toTopOf="@+id/btnRepair" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
